@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BedFlow - Control de Limpieza y Tiempos en Hoteles</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="\dist\css\mi-estilo.css">
+</head>
+
+<body>
+
+    <!-- 1. CABECERA (HEADER) -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon"><i class="fa-solid fa-bed"></i></div>
+            <div class="logo-text">Bed<span>Flow</span></div>
+        </div>
+        <nav class="top-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Registros</a>
+            <a href="#">Tablas</a>
+            <a href="#">Seguridad</a>
+            <a href="#">Reportes</a>
+            <a href="#">Ayuda</a>
+        </nav>
+        <div class="user-profile">
+            <i class="fa-solid fa-user-shield"></i> Admin
+        </div>
+    </header>
+
+    <!-- CONTENEDOR CENTRAL -->
+    <div class="main-container">
+
+        <!-- SIDEBAR (Barra lateral de navegación rápida) -->
+        <aside>
+            <div class="sidebar-title">Menú Principal</div>
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Panel Principal</a></li>
+                <li><a href="#"><i class="fa-solid fa-bed"></i> Habitaciones</a></li>
+                <li><a href="#"><i class="fa-solid fa-stopwatch"></i> Tiempos de Aseo</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i> Operarios</a></li>
+                <li><a href="#"><i class="fa-solid fa-clipboard-list"></i> Registro de Eventos</a></li>
+                <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Seguridad & Roles</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- 2. CUERPO (BODY / CONTENIDO DE LA PÁGINA) -->
+        <content>
+            <!-- Tarjetas KPI -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <h4>Habitaciones Limpias</h4>
+                    <div class="value val-green">42 / 50</div>
+                </div>
+                <div class="kpi-card">
+                    <h4>Tiempo Promedio</h4>
+                    <div class="value val-blue">28 min</div>
+                </div>
+                <div class="kpi-card">
+                    <h4>Operarios Activos</h4>
+                    <div class="value val-orange">12</div>
+                </div>
+                <div class="kpi-card">
+                    <h4>Incidencias Hoy</h4>
+                    <div class="value val-red">3</div>
+                </div>
+            </div>
+
+            <!-- Panel dividido: Gráfica de Tiempos y Eventos -->
+            <div class="dashboard-grid">
+                <!-- Gráfica de Tiempos por Turno -->
+                <div class="panel-box">
+                    <h3>Rendimiento y Tiempos de Aseo por Turno</h3>
+                    <div class="chart-container">
+                        <div class="bar-group">
+                            <div class="bar bar-morning"></div>
+                            <span class="bar-label">Mañana</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-afternoon"></div>
+                            <span class="bar-label">Tarde</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-night"></div>
+                            <span class="bar-label">Noche</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Últimos Eventos Registrados -->
+                <div class="panel-box">
+                    <h3>Últimos Eventos Registrados</h3>
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-dot dot-green"></div>
+                            <div><strong>10:15 - Hab. 204:</strong> Aseo finalizado (Juan P.)</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-dot dot-blue"></div>
+                            <div><strong>09:50 - Hab. 102:</strong> Inicio de limpieza (Maria L.)</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-dot dot-orange"></div>
+                            <div><strong>09:30 - Hab. 305:</strong> Reporte de objeto olvidado</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-dot dot-blue"></div>
+                            <div><strong>09:15 - Hab. 110:</strong> Inicio de aseo (Carlos R.)</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-dot dot-green"></div>
+                            <div><strong>08:45 - Hab. 201:</strong> Inspección aprobada</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content>
+    </div>
+
+    <!-- 3. PIE DE PÁGINA (FOOTER) -->
+    <footer>
+        <div>© 2026 BedFlow - Sistema Integral de Control de Aseo y Tiempos en Hotelería.</div>
+        <div>Versión 1.0.0 | <span></span></div>
+    </footer>
+
+</body>
+
+</html>
